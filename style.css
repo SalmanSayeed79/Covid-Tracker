@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Passion+One&family=Poppins:ital,wght@1,200&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.full_container {
+  width: 100vw;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: linear-gradient(120deg, #141414, #975936);
+  -webkit-transition: all 1.5s ease-in;
+  transition: all 1.5s ease-in;
+  overflow: hidden;
+  -webkit-transform: translateY(-100vh);
+          transform: translateY(-100vh);
+}
+
+.curtain_fall {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.change_bg {
+  background-image: linear-gradient(120deg, #975936, #141414);
+}
+
+h2 {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 3rem;
+  font-family: 'Passion One', cursive;
+  letter-spacing: 2px;
+}
+
+h2 span {
+  color: #ff5e00;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+h2 span:hover {
+  color: white;
+  background-color: #ff5e00;
+  padding: 0 2rem;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+label {
+  font-size: 1.5rem;
+  color: white;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+label:hover {
+  color: #ff3300;
+  padding: 1rem 5rem;
+  background-color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.input_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+button {
+  height: 5vh;
+  width: 15vw;
+  border-radius: 15px;
+  background-color: orange;
+}
+
+button:hover {
+  background-color: #ff7b00;
+}
+
+button:active {
+  background-color: #ff3300;
+}
+
+input {
+  height: 5vh;
+  width: 40vw;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #f8a873;
+  margin: 2vh 0;
+}
+
+input:active {
+  height: 5vh;
+  width: 40vw;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#from_btn {
+  display: none;
+}
+
+#to_btn {
+  display: none;
+}
+
+#from {
+  display: none;
+}
+
+#to {
+  display: none;
+}
+
+#button {
+  display: none;
+}
+
+.showing {
+  display: block !important;
+}
+
+.hide {
+  display: none;
+}
+
+.graph_container {
+  display: none;
+}
+
+.show_container {
+  margin-top: 15vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 90vw;
+  height: 40vh;
+  border-radius: 5rem;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/*# sourceMappingURL=style.css.map */

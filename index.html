@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./node_modules/chart.js/dist/Chart.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Track Covid</title>
+</head>
+<body>
+    <div class="full_container" >
+    <h2><span>COVID-19</span> TRACKER</h2>
+    <div class="input_container">
+        <label for="country">Enter the country name:</label>
+        <input type="text" name="country" id="country" placeholder="Country Name">
+        <button id="country_btn">Next</button>
+        <input type="date" id='from' placeholder="From">
+        <button id="from_btn">Next</button>
+        <input type="date" id="to" placeholder="To">
+        <button id="to_btn">Next</button>
+        <button id="button">click</button>
+    </div>
+    <div class="graph_container" >
+        <canvas id="confirmed" style=" width: 40vw; height:40vh ;" ></canvas>
+        <canvas id="death" style=" width: 40vw; height:40vh ;" ></canvas>
+    </div>
+    </div>
+  
+    <script src="app.js"></script>
+  
+</body>
+</html>

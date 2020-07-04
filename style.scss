@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Passion+One&family=Poppins:ital,wght@1,200&display=swap');
+//==================================================================//
+//
+//          UI DESIGN
+//
+//
+//==================================================================//
+*{
+    margin: 0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+}
+.full_container{
+    width: 100vw;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-image:linear-gradient(120deg,rgb(20, 20, 20),rgb(151, 89, 54));
+
+    transition: all 1.5s ease-in;
+
+    overflow: hidden;
+    transform: translateY(-100vh);
+}
+.curtain_fall{
+    transform: translateY(0);
+}
+
+.change_bg{
+    background-image:linear-gradient(120deg,rgb(151, 89, 54),rgb(20, 20, 20));
+}
+
+
+h2{
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 3rem;
+    font-family: 'Passion One', cursive;
+    letter-spacing: 2px;
+}
+h2 span{
+    color: rgb(255, 94, 0);
+    transition: all .3s linear ;
+}
+h2 span:hover{
+    color: white;
+    background-color: rgb(255, 94, 0);
+    padding: 0 2rem;
+    cursor: pointer;
+    border-radius: 15px;
+}
+//==================================================================//
+//
+//              INPUT CONTAINER
+//
+//==================================================================//
+label{
+    font-size: 1.5rem;
+    color: white;
+    transition: all .3s linear;
+}label:hover{
+    color: rgb(255, 51, 0);
+    padding: 1rem 5rem;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.input_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    height: 5vh;
+    width: 15vw;
+    border-radius: 15px;
+    background-color: orange;
+
+}
+button:hover{
+    background-color: rgb(255, 123, 0);
+}
+button:active{
+    background-color: rgb(255, 51, 0);
+}
+input{
+    height: 5vh;
+    width: 40vw;
+    border-radius: 10px;
+    text-align: center;
+
+    background-color: rgb(248, 168, 115);
+ 
+
+    margin: 2vh 0;
+}
+input:active{
+    height: 5vh;
+    width: 40vw;
+    border-radius: 10px;
+    text-align: center;
+}
+
+//taking care of all the buttons
+
+#from_btn{
+    display: none;
+}
+#to_btn{
+    display: none;
+}
+#from{
+    display: none;
+}
+#to{
+    display: none;
+}
+#button{
+ display: none;
+}
+
+
+//creating a class to display the to_btn and remove the from btn
+.showing{
+    display: block !important;
+    
+}
+.hide{
+    display: none;
+}
+//==================================================================//
+//
+//              GRAPH CONTAINER
+//
+//==================================================================//
+.graph_container{
+   display: none;
+}
+
+canvas{
+   
+}
+
+.show_container{
+    margin-top: 15vh;
+    display: flex;
+    flex-direction: row; 
+    align-content: center; 
+    justify-content: center; 
+
+    width: 90vw; 
+    height: 40vh;
+    border-radius: 5rem;
+    background-color: rgba(black,.5);
+}
+
+//==================================================================//
+//
+//              CHART
+//
+//==================================================================//
+//we need to change the option of each chart object to resposive=false 
+//we need to change the size in the html tag cause changes in css won't work a
+//We use <canvas style="width=50vw ; height=60vh> to change the sizes
+//we also need to put the changes in the container in the html tag cause the chart.js overwrites all our css files
+
+
+
+
+
+
